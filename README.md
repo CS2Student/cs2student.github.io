@@ -1,1 +1,3 @@
-# cs2student.github.io
+cs2student.github.io
+
+Personal website built using HTML, CSS, JavaScript
