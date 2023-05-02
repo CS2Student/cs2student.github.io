@@ -1,0 +1,99 @@
+/* apply to whole page */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    text-decoration: none;
+}
+
+/* custom variables */
+:root {
+    --main-color: #222c3c;
+    --bg-color: #18181b;
+    --border-color: #1e293b;
+
+    --text-color: white;
+    --text-color-hover: #01C38D;
+}
+
+/* body */
+body {
+    background-color: var(--bg-color);
+}
+
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: var(--main-color);
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 20px;
+}
+
+.navbar a.left {
+    float: left;
+}
+
+.navbar a:hover {
+    color: var(--text-color-hover);
+}
+ 
+
+/* container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* hero */
+.hero {
+    flex: 30%;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-top: 1px solid;
+    border-color: var(--border-color);
+}
+
+/* main */
+.main {
+    flex: 70%;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-top: 1px solid;
+    border-color: var(--border-color);
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-top: 1px solid;
+    border-color: var(--border-color);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media scree and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%
+    }
+}
+
+
