@@ -51,24 +51,32 @@ body {
     background-color: var(--bg-color);
     padding: 20px;
     border-top: 1px solid;
+    border-bottom: 1px solid;
     border-color: var(--border-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero > * {
+    width: 100%;
     padding: 1rem;
 }
 
-.hero h3 p {
-    float:left;
+.hero-skills {
+    padding-left: 10px;
 }
 
-.hero img {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.hero-skills ul li {
+    list-style-type: '';
+}
+
+@media (min-width: 768px) {
+    .hero > *:nth-child(1) {
+        width:calc(100% / 3 * 2);
+    }
+    .hero > *:nth-child(2) {
+        width:calc(100% / 3);
+    }
 }
 
 /* project cards */
@@ -116,12 +124,14 @@ body {
 
 /* Responsive layout */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .hero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
     }
-}
+    .hero .hero-about .hero-skills {
+        width: 50%;
+    }
+} */
 
 @media (min-width: 600px) {
     .cards {
