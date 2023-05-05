@@ -45,13 +45,17 @@ body {
     color: var(--text-color-hover);
 }
 
+.navbar .media {
+    font-size: 20px;
+}
+
 /* hero */
 .hero {
     color: var(--text-color);
     background-color: var(--bg-color);
     padding: 20px;
     border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     border-color: var(--border-color);
     display: flex;
     flex-wrap: wrap;
@@ -66,13 +70,11 @@ body {
     list-style-type: '';
 }
 
-@media (min-width: 768px) {
-    .hero > *:nth-child(1) {
-        width:calc(100% / 3 * 2);
-    }
-    .hero > *:nth-child(2) {
-        width:calc(100% / 3);
-    }
+/* projects */
+.projects h3 {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* project cards */
@@ -80,7 +82,6 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     padding: 20px;
-    border-top: 1px solid;
     border-color: var(--border-color);
     max-width: 1200px;
     margin: 0 auto;
@@ -130,14 +131,14 @@ body {
 
 /* Responsive layout */
 
-/* @media (min-width: 768px) {
-    .hero {
-        display: block;
+@media (min-width: 768px) {
+    .hero > *:nth-child(1) {
+        width:calc(100% / 3 * 2);
     }
-    .hero .hero-about .hero-skills {
-        width: 50%;
+    .hero > *:nth-child(2) {
+        width:calc(100% / 3);
     }
-} */
+}
 
 @media (min-width: 600px) {
     .cards {
