@@ -47,6 +47,7 @@ body {
 
 .navbar .media {
     font-size: 20px;
+    display: inline;
 }
 
 /* hero */
