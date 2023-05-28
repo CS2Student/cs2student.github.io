@@ -127,11 +127,11 @@ body {
 
 /* footer */
 .footer {
-    padding: 20px;
+    padding: 14px 20px;
     text-align: center;
     background: var(--main-color);
     color: var(--text-color);
-    padding: 14px 20px;
+    text-align: center;
 }
 
 .footer p {
