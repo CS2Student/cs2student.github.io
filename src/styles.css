@@ -11,11 +11,10 @@
 :root {
     --main-color: #28282B;
     --bg-color: #28282B;
-    --border-color: #355e3b;
+    --border-color: #5b7553; 
 
     /* Substitute colors */
     /* 
-       --border-color: #5b7553; 
        --border-color: #355e3b;
     */
 
@@ -47,6 +46,7 @@ body {
     color: var(--text-color);
     text-align: center;
     padding: 14px 20px;
+    transition: 0.1s ease-out;
 }
 
 .navbar a.left {
