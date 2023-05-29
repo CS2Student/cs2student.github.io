@@ -9,9 +9,15 @@
 
 /* custom variables */
 :root {
-    --main-color: #222c3c;
-    --bg-color: #18181b;
-    --border-color: #1e293b;
+    --main-color: #28282B;
+    --bg-color: #28282B;
+    --border-color: #355e3b;
+
+    /* Substitute colors */
+    /* 
+       --border-color: #5b7553; 
+       --border-color: #355e3b;
+    */
 
     --text-color: white;
     --text-color-hover: #01C38D;
@@ -29,6 +35,10 @@ body {
 .navbar {
     overflow: hidden;
     background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 3;
 }
 
 .navbar a {
@@ -173,4 +183,3 @@ body {
         width: 100%
     }
 }
-
