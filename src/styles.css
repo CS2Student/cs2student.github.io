@@ -219,8 +219,8 @@ body {
       transform: translateY(-8px) rotate(-45deg);
     }
     .menu{
+        display: none;
         position: fixed;
-        left: -100%;
         top: 48px;
         gap: 0;
         flex-direction: column;
@@ -229,6 +229,10 @@ body {
         text-align: center;
         transition: 0.3s;
     }
+    .menu.active {
+        display: block;
+    }
+
     .media-item{
         margin: 16px 0;
     }
