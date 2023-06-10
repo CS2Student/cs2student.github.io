@@ -150,6 +150,16 @@ body {
     color: var(--text-color-hover);
 }
 
+.card .tools {
+    padding-top: 5px;
+}
+
+.card .tool {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
 .publications {
     padding-top: 8px;
     padding-bottom: 8px;
