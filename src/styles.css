@@ -125,6 +125,7 @@ body {
     border-radius: 5px;
     background-color: var(--border-color);
     padding: 1rem;
+    position: relative;
 }
 
 .card img {
@@ -150,11 +151,19 @@ body {
     color: var(--text-color-hover);
 }
 
-.card .tools {
-    padding-top: 5px;
+.card-text {
+    padding-bottom: 50px;
 }
 
-.card .tool {
+.card .tools {
+    display: flex;
+    padding-top: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.tool {
     height: 30px;
     width: 30px;
     display: inline-block;
@@ -163,6 +172,7 @@ body {
 .publications {
     padding-top: 8px;
     padding-bottom: 8px;
+    bottom: 0;
 }
 
 /* footer */
