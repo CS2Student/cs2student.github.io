@@ -97,7 +97,7 @@ body {
 }
 
 /* Skills */
-.hero .collapsible {
+.collapsible {
     background-color: var(--bg-color);
     color: var(--text-color);
     cursor: pointer;
@@ -105,7 +105,7 @@ body {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .active, .collapsible:hover {
@@ -114,11 +114,25 @@ body {
 }
 
 .skills-content {
-    background-color: var(--bg-color);
+    background-color: var(--border-color);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-radius: 5px;
+    font-size: 23px;
+}
+
+.skills-content ul {
+    padding: 10px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+}
+  
+.active:after {
+    content: '\2796'; /* Unicode character for "minus" sign (-) */
 }
 
 /* projects */
