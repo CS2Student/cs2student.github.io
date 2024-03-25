@@ -14,6 +14,9 @@
 			<a href="/about" class="link">About</a>
 		</li>
 		<li>
+			<a href="https://github.com/CS2Student" class="link">Github</a>
+		</li>
+		<li>
 			<Toggle />
 		</li>
 	</ul>
